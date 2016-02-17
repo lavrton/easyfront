@@ -1,17 +1,19 @@
 # Simpler
 
-Universal tool for modern and uptodate frontend development flow.
+Universal tool for modern and fucking simpler front end development flow.
+
+What to make web development DAMN simple? Meet with `Simpler`!
 
 Usage:
 
 ```bash
 # install globally for initing command
-npm install fronthelp -g
+npm install simpler -g
 
 mkdir my-awesome-project && cd ./my-awesome-project
 
 # create initial frontend application file structure
-fronthelp init
+simpler init
 
 # start dev enviroment
 npm start
