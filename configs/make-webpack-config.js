@@ -6,13 +6,12 @@ var readline = require('readline');
 
 module.exports = function(options) {
     var conf = {
-        entry: {
-            src: './src/entry.js',
-            tests: './tests/tests.js'
-        },
+        entry: [
+            './src/entry.js'
+        ],
         output: {
             path: process.cwd(),
-            filename: './[name]/bundle.js'
+            filename: './src/bundle.js'
         },
         module: {
             loaders: [
