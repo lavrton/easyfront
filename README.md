@@ -1,19 +1,19 @@
-# Simpler
+# easyfront
 
-Universal tool for modern and fucking simpler front end development flow.
+Universal tool for modern and fucking simple front end development flow.
 
-What to make web development DAMN simple? Meet with `Simpler`!
+What to make web development DAMN simple? Meet with `easyfront`!
 
 Usage:
 
 ```bash
 # install globally for initing command
-npm install simpler -g
+npm install easyfront -g
 
 mkdir my-awesome-project && cd ./my-awesome-project
 
 # create initial frontend application file structure
-simpler init
+easyfront init
 
 # start dev enviroment
 npm start
