@@ -1,4 +1,4 @@
-# Fronthelp
+# Simpler
 
 Universal tool for modern and uptodate frontend development flow.
 

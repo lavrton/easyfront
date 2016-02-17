@@ -28,6 +28,7 @@ program.command('build')
         cp(path.join(process.cwd(), 'src', 'index.html'), path.join(process.cwd(), 'dist'));
         cp(path.join(process.cwd(), 'src', 'bundle.js'), path.join(process.cwd(), 'dist'));
         rm('-rf', path.join(process.cwd(), 'src', 'bundle.js'));
+        rm('-rf', path.join(process.cwd(), 'tests', 'bundle.js'));
 
         cp('-r', path.join(process.cwd(), 'src', 'assets'), path.join(process.cwd(), 'dist', 'assets'));
     });
@@ -43,10 +44,19 @@ program.command('dev')
 
 program.command('test')
     .action(function(env, options) {
+        // create bundles
+        exec(
+            path.join(binDir, 'webpack') +
+            ' --config ' + path.join(configDir, 'webpack-production.config.js') +
+            ' --progress --profile --colors' +
+            ' ---output-path ' + process.cwd()
+        );
         exec(
             path.join(binDir, 'mocha-phantomjs') + ' ' +
-            path.join(process.cwd(), 'tests', 'tests.html')
+            path.join(process.cwd(), 'tests', 'index.html')
         );
+        rm('-rf', path.join(process.cwd(), 'src', 'bundle.js'));
+        rm('-rf', path.join(process.cwd(), 'tests', 'bundle.js'));
     });
 
 program.command('lint')
