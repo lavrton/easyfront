@@ -1,0 +1,18 @@
+{
+  "name": "my-project-name",
+  "version": "0.0.1",
+  "description": "My awesome project description",
+  "scripts": {
+    "start": "fronthelp dev",
+    "build": "fronthelp build",
+    "test": "fronthelp test",
+    "lint": "fronthelp lint"
+  },
+  "author": "Your name",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^2.1.0",
+    "eslint-plugin-react": "^3.13.1"
+  }
+}
