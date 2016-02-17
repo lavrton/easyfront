@@ -23,6 +23,7 @@ program.command('build')
         );
         rm('-rf', 'dist');
 
+        mkdir('dist');
         // copy index file
         cp(path.join(process.cwd(), 'src', 'index.html'), path.join(process.cwd(), 'dist'));
         cp(path.join(process.cwd(), 'src', 'bundle.js'), path.join(process.cwd(), 'dist'));

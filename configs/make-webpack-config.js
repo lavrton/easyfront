@@ -1,17 +1,17 @@
 var webpack = require('webpack');
 var assign = require('lodash').assign;
 var path = require('path');
-var readline = require('readline');
 
 
 module.exports = function(options) {
     var conf = {
-        entry: [
-            './src/entry.js'
-        ],
+        entry: {
+            src: './src/scripts/entry.js',
+            tests: './tests/tests.js'
+        },
         output: {
             path: process.cwd(),
-            filename: './src/bundle.js'
+            filename: './[name]/bundle.js'
         },
         module: {
             loaders: [
@@ -48,8 +48,8 @@ module.exports = function(options) {
                 compressor: {
                     warnings: false
                 }
-            }),
-            new webpack.optimize.DedupePlugin()
+            })
+            // new webpack.optimize.DedupePlugin()
         );
         conf.plugins.push(
             new webpack.DefinePlugin({
