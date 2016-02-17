@@ -20,6 +20,8 @@
     "eslint-plugin-react": "^3.16.1",
     "lodash": "^4.3.0",
     "mocha-phantomjs": "^4.0.2",
+    "raw-loader": "^0.5.1",
+    "shelljs": "^0.6.0",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
