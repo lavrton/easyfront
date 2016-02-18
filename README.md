@@ -48,3 +48,35 @@ If you need to include some addition files (like images, fonts or styles which y
 - flow support
 - more useful babel-presets
 - css preprocessors
+
+
+## Benefits of using easyfront?
+
+The general idea of `easyfront` is to make frontend development flow very simple and AVOID any configurations.
+
+There is part of my package.json before easyfront:
+
+```
+“devDependencies”: {
+ “babel-core”: “^6.2.1”,
+ “babel-loader”: “^6.2.0”,
+ “babel-plugin-transform-object-rest-spread”: “^6.1.18”,
+ “babel-preset-es2015”: “^6.1.18”,
+ “babel-preset-react”: “^6.1.18”,
+ “babel-preset-stage-0”: “^6.1.18”,
+ “css-loader”: “^0.22.0”,
+ “eslint”: “^2.1.0”,
+ “raw-loader”: “^0.5.1”,
+ “react-addons-perf”: “^0.14.3”,
+ “style-loader”: “^0.13.0”,
+ “webpack”: “^1.12.4”,
+ “webpack-dev-server”: “^1.12.1”
+}
+```
+After:
+```
+“devDependencies”: {
+   “eslint”: “^2.1.0”,
+   “easyfront”: “^0.0.6”
+ }
+ ```
