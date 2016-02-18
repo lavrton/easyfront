@@ -3,16 +3,18 @@
   "version": "0.0.1",
   "description": "My awesome project description",
   "scripts": {
-    "start": "fronthelp dev",
-    "build": "fronthelp build",
-    "test": "fronthelp test",
-    "lint": "fronthelp lint"
+    "start": "easyfront dev",
+    "build": "easyfront build",
+    "test": "easyfront test",
+    "lint": "easyfront lint"
   },
   "author": "Your name",
+  "repository": "git-path",
+  "license": "MIT",
   "dependencies": {
   },
   "devDependencies": {
     "eslint": "^2.1.0",
-    "eslint-plugin-react": "^3.13.1"
+    "easyfront": "^0.0.6"
   }
 }

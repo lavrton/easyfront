@@ -53,15 +53,15 @@ program.command('test')
         );
         exec(
             path.join(binDir, 'mocha-phantomjs') + ' ' +
-            path.join(process.cwd(), 'tests', 'index.html')
+            path.join(process.cwd(), 'test', 'index.html')
         );
         rm('-rf', path.join(process.cwd(), 'src', 'bundle.js'));
-        rm('-rf', path.join(process.cwd(), 'tests', 'bundle.js'));
+        rm('-rf', path.join(process.cwd(), 'test', 'bundle.js'));
     });
 
 program.command('lint')
     .action(function(env, options) {
-        // exec(path.join(process., 'eslint') + ' ./src/**/*.js');
+        console.log('Will be available soon...');
     });
 
 program.command('init')

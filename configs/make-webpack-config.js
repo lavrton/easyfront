@@ -6,8 +6,8 @@ var path = require('path');
 module.exports = function(options) {
     var conf = {
         entry: {
-            src: './src/scripts/entry.js',
-            tests: './tests/tests.js'
+            src: './src/entry.js',
+            test: './test/tests.js'
         },
         output: {
             path: process.cwd(),
