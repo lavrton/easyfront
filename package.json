@@ -1,13 +1,22 @@
 {
   "name": "easyfront",
   "version": "0.0.7",
-  "description": "",
+  "description": "Universal tool for modern and fucking simple frontend development flow",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anton Lavrenov <lavrton@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lavrton/easyfront/issues"
+  },
+  "homepage": "https://github.com/lavrton/easyfront",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lavrton/easyfront.git"
+  },
   "dependencies": {
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.2",
