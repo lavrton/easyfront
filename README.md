@@ -1,5 +1,7 @@
 # easyfront
 
+![easyfront logo](https://cloud.githubusercontent.com/assets/1443320/13167423/f09fdf14-d70d-11e5-9221-6d9ccfd45e7e.png)
+
 [![Join the chat at https://gitter.im/lavrton/easyfront](https://badges.gitter.im/lavrton/easyfront.svg)](https://gitter.im/lavrton/easyfront?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Universal tool for modern and fucking simple front end development flow.
