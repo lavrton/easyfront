@@ -45,6 +45,16 @@ npm run build
 All your core files are placed in `./src/` directory.
 If you need to include some addition files (like images, fonts or styles which you don't want to import from js) into build result just place them in `./src/assets/` directory.
 
+Use `npm` for any libraries/frameworks dependences:
+
+```bash
+npm install react --save
+```
+
+```javascript
+import React from 'react';
+```
+
 ## Support
 
 - Join [gitter char](https://gitter.im/lavrton/easyfront)
