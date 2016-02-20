@@ -8,9 +8,13 @@ Universal tool for modern and dead simple frontend development flow.
 
 What to make web development DAMN simple? Meet with `easyfront`!
 
-You can read more about my motivation of creating this tool in [my medium post](https://medium.com/@lavrton/frontend-development-tools-are-damn-complex-let-us-fix-it-56b3ff46ca8d#.jamstply4)
 
-Usage:
+## [Read the Overview Post](https://medium.com/@lavrton/frontend-development-tools-are-damn-complex-let-us-fix-it-56b3ff46ca8d)
+
+[https://medium.com/@lavrton/frontend-development-tools-are-damn-complex-let-us-fix-it-56b3ff46ca8d](https://medium.com/@lavrton/frontend-development-tools-are-damn-complex-let-us-fix-it-56b3ff46ca8d)
+
+
+## Usage:
 
 ```bash
 # install globally for initing command
