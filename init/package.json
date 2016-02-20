@@ -15,6 +15,6 @@
   },
   "devDependencies": {
     "eslint": "^2.1.0",
-    "easyfront": "^0.0.6"
+    "easyfront": "^0.0.9"
   }
 }
