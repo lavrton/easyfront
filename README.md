@@ -127,3 +127,11 @@ The idea of `easyfront` is to hide all of this internal tools from you. So if ne
 ### Can I use Jasmine instead of Mocha/chai for testing?
 
 Yes, you can. But you have to install them manually and `easyfront test` command will not work in this case. So if you need CLI test runner you have to setup it manually.
+
+## Alternatives
+
+There are some other projects with the same idea:
+
+1. https://github.com/insin/nwb
+2. https://github.com/mzabriskie/rackt-cli [very specific to react]
+3. https://github.com/petehunt/rwb
