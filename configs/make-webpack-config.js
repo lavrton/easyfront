@@ -33,7 +33,8 @@ module.exports = function(options) {
         },
         resolveLoader: {
               modulesDirectories: [
-                  path.join(__dirname, '../', 'node_modules')
+                  path.join(__dirname, '../', 'node_modules'),
+                  path.join(process.cwd(), 'node_modules')
               ]
         },
         plugins: [

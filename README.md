@@ -57,6 +57,10 @@ npm install react --save
 import React from 'react';
 ```
 
+## npm2 and npm3 note
+
+By default your tests will be configured to get dependences (mocha/chai) from `./node_modules/`. It will work well for `npm3` users as `npm3` use flatten approach of installing dependences. If you are using `npm2` take a look into `./test/index.html`. There are some comments how to enable test for you.
+
 ## Support
 
 - Join [gitter char](https://gitter.im/lavrton/easyfront)

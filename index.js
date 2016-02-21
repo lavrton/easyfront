@@ -5,10 +5,15 @@ require('shelljs/global');
 
 var program = require('commander');
 var path = require('path');
+var which = require('npm-which')(__dirname);
 
+function getBin(cmd) {
+    return which.sync(cmd);
+}
 
 var binDir = path.join(__dirname, 'node_modules', '.bin');
 var configDir = path.join(__dirname, 'configs');
+
 
 
 program.version('0.0.1');
@@ -16,7 +21,7 @@ program.version('0.0.1');
 program.command('build')
     .action(function(env, options) {
         exec(
-            path.join(binDir, 'webpack') +
+            getBin('webpack') +
             ' --config ' + path.join(configDir, 'webpack-production.config.js') +
             ' --progress --profile --colors' +
             ' ---output-path ' + process.cwd()
@@ -36,7 +41,7 @@ program.command('build')
 program.command('dev')
     .action(function(env, options) {
         exec(
-            path.join(binDir, 'webpack-dev-server') +
+            getBin('webpack-dev-server') +
             ' --config ' + path.join(configDir, 'webpack-dev-server.config.js') +
             ' --progress --colors --inline'
         );
@@ -46,13 +51,13 @@ program.command('test')
     .action(function(env, options) {
         // create bundles
         exec(
-            path.join(binDir, 'webpack') +
+            getBin('webpack') +
             ' --config ' + path.join(configDir, 'webpack-production.config.js') +
             ' --progress --profile --colors' +
             ' ---output-path ' + process.cwd()
         );
         exec(
-            path.join(binDir, 'mocha-phantomjs') + ' ' +
+            getBin('mocha-phantomjs') + ' ' +
             path.join(process.cwd(), 'test', 'index.html')
         );
         rm('-rf', path.join(process.cwd(), 'src', 'bundle.js'));
