@@ -4,7 +4,7 @@
 
 [![Join the chat at https://gitter.im/lavrton/easyfront](https://badges.gitter.im/lavrton/easyfront.svg)](https://gitter.im/lavrton/easyfront?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Universal tool for modern and dead simple frontend development flow.
+Integral tool for modern and dead simple frontend development flow.
 
 What to make web development DAMN simple? Meet with `easyfront`!
 
