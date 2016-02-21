@@ -111,7 +111,7 @@ We want to avoid ANY configurations and use them as less as possible.
 
 If you have something very good to add into current webpack configuration create GitHub issue, please.
 
-### Can I use gulp/grunt instead of webpack.
+### Can I use gulp/grunt instead of webpack?
 
 Probably you don't need grunt/gulp for bundling as webpack works very good. If you have your own gulp/grunt configuration for bundling you don't need `easyfront`.
 
@@ -120,6 +120,6 @@ But in some specific cases (for instance ftp deploy, assets preparation) you can
 The idea of `easyfront` is to hide all of this internal tools from you. So if new better bundler will come out (something that can replace webpack) you will not care about this, because `easyfront` incapsulate such tool and bundler will be updated inside `easyfront`.
 
 
-### Can I use Jasmine instead of Mocha/chai for testing.
+### Can I use Jasmine instead of Mocha/chai for testing?
 
 Yes, you can. But you have to install them manually and `easyfront test` command will not work in this case. So if you need CLI test runner you have to setup it manually.
