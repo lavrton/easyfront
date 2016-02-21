@@ -1,6 +1,6 @@
 {
   "name": "easyfront",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Integral tool for modern and dead simple frontend development flow.",
   "main": "index.js",
   "scripts": {
