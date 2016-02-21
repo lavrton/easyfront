@@ -104,9 +104,12 @@ After:
 
 ## F.A.Q.
 
-### Can I use Jasmine instead of Mocha/chai for testing.
+### Can I use my own webpack configuration?
 
-Yes, you can. But you have to install them manually and `easyfront test` command will not work in this case. So if you need CLI test runner you have to setup it manually.
+Probably this will be supported, but right now *NO*.
+We want to avoid ANY configurations and use them as less as possible.
+
+If you have something very good to add into current webpack configuration create GitHub issue, please.
 
 ### Can I use gulp/grunt instead of webpack.
 
@@ -114,11 +117,9 @@ Probably you don't need grunt/gulp for bundling as webpack works very good. If y
 
 But in some specific cases (for instance ftp deploy, assets preparation) you can use gulp/grunt in parallel with `easyfront`.
 
-The idea of `easyfront` is to hide all of this internal tools from you. So if new better bundler will come out (something that can replace webpack) you will not care about this, because `easyfront` incapsulate such tool.
+The idea of `easyfront` is to hide all of this internal tools from you. So if new better bundler will come out (something that can replace webpack) you will not care about this, because `easyfront` incapsulate such tool and bundler will be updated inside `easyfront`.
 
-### Can I use my own webpack configuration?
 
-Probably this will be supported, but right now *NO*.
-We want to avoid ANY configurations and use them as less as possible.
+### Can I use Jasmine instead of Mocha/chai for testing.
 
-If you have something very good to add into current webpack configuration create GitHub issue, please.
+Yes, you can. But you have to install them manually and `easyfront test` command will not work in this case. So if you need CLI test runner you have to setup it manually.
