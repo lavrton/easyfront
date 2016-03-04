@@ -18,6 +18,11 @@ module.exports = function(options) {
                 { test: /\.css$/, loader: 'style!css' },
                 { test: /\.srt/, loader: 'raw' },
                 {
+                    test: /\.png$/,
+                    loader: 'url-loader',
+                    query: { mimetype: 'image/png' }
+                },
+                {
                     test: /\.jsx?$/,
                     exclude: /(node_modules|bower_components)/,
                     loader: ['babel'],

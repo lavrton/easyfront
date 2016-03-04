@@ -27,6 +27,7 @@
     "commander": "^2.9.0",
     "css-loader": "^0.23.1",
     "eslint": "^2.0.0",
+    "file-loader": "^0.8.5",
     "lodash": "^4.3.0",
     "mocha": "^2.4.5",
     "mocha-phantomjs": "^4.0.2",
@@ -34,6 +35,7 @@
     "raw-loader": "^0.5.1",
     "shelljs": "^0.6.0",
     "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   },
