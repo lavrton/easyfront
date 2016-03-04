@@ -157,3 +157,10 @@ There are some other projects with the same idea:
 1. https://github.com/insin/nwb
 2. https://github.com/mzabriskie/rackt-cli [very specific to react]
 3. https://github.com/petehunt/rwb
+
+## Change log
+
+### 0.0.12
+
+- add port option to `dev` command
+- add add png loader
