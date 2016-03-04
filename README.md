@@ -19,27 +19,27 @@ What to make web development DAMN simple? Meet with `easyfront`!
 ## Usage:
 
 ```bash
-# install globally for initing command
-npm install easyfront -g
-
+# create folder for you project
 mkdir my-project && cd ./my-project
 
-# create initial frontend application file structure and instal some deps
-easyfront init
+# instal easyfront locally
+npm install easyfront
 
-# start dev enviroment and local server
+# create initial frontend application file structure and instal some deps
+./node_modules/.bin/easyfront init
+
+
+# start dev environment and local server
 npm start
+
 # now go to http://localhost:8080/src/ for your app
 # or http://localhost:8080/test/ for tests
-
 
 # run tests via CLI
 npm test
 
 # compile, concat and minify application
 npm run build
-
-
 ```
 
 ## Project structure
@@ -60,6 +60,28 @@ import React from 'react';
 ## npm2 and npm3 note
 
 By default your tests will be configured to get dependences (mocha/chai) from `./node_modules/`. It will work well for `npm3` users as `npm3` use flatten approach of installing dependences. If you are using `npm2` take a look into `./test/index.html`. There are some comments how to enable test for you.
+
+## Configuration
+
+Remember that the general idea of `easyfront` is to avoid any configuration.
+But if you still need some customization you can pass some options into `easyfront` CLI.
+For list of all option you can run:
+
+```bash
+./node_modules/.bin/easyfront [command] -h
+# for instance
+./node_modules/.bin/easyfront dev -h
+```
+
+## There are list of current options
+
+You can update `scripts` of your `package.json` file.
+
+### Local server port
+
+```
+easyfront dev --port 8081
+```
 
 ## Support
 
