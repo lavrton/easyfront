@@ -155,8 +155,11 @@ Yes, you can. But you have to install them manually and `easyfront test` command
 There are some other projects with the same idea:
 
 1. https://github.com/insin/nwb
-2. https://github.com/mzabriskie/rackt-cli [very specific to react]
-3. https://github.com/petehunt/rwb
+2. https://github.com/mzabriskie/rackt-cli  [very specific to react, useful for creating and publishing componets]
+3. https://github.com/petehunt/rwb [was not working for me, and code structure is strange]
+4. https://github.com/ryanflorence/react-project [add a lot of React + react router boilerplates but have server support]
+5. https://github.com/tj/react-fatigue-dev [Looks like limited for creating react components]
+6. https://github.com/jarsbe/react-simple [For fast test without building]
 
 ## Change log
 
