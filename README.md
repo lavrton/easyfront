@@ -1,3 +1,7 @@
+## Deprecated. Use [CRA](https://github.com/facebookincubator/create-react-app) instead!
+
+
+
 # easyfront
 
 ![easyfront logo](https://cloud.githubusercontent.com/assets/1443320/13167423/f09fdf14-d70d-11e5-9221-6d9ccfd45e7e.png)
